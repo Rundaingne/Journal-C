@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F7B8E12B224963F90060B053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E12A224963F90060B053 /* AppDelegate.m */; };
-		F7B8E12E224963F90060B053 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E12D224963F90060B053 /* ViewController.m */; };
 		F7B8E131224963F90060B053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B8E12F224963F90060B053 /* Main.storyboard */; };
 		F7B8E133224963FA0060B053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B8E132224963FA0060B053 /* Assets.xcassets */; };
 		F7B8E136224963FA0060B053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B8E134224963FA0060B053 /* LaunchScreen.storyboard */; };
 		F7B8E139224963FB0060B053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E138224963FB0060B053 /* main.m */; };
+		F7B8E1412249648A0060B053 /* EKKEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E1402249648A0060B053 /* EKKEntry.m */; };
+		F7B8E145224964C00060B053 /* EkkEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E144224964C00060B053 /* EkkEntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7B8E126224963F90060B053 /* Journal-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B8E129224963F90060B053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7B8E12A224963F90060B053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7B8E12C224963F90060B053 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7B8E12D224963F90060B053 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F7B8E130224963F90060B053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7B8E132224963FA0060B053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B8E135224963FA0060B053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7B8E137224963FA0060B053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B8E138224963FB0060B053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7B8E13F2249648A0060B053 /* EKKEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKKEntry.h; sourceTree = "<group>"; };
+		F7B8E1402249648A0060B053 /* EKKEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKKEntry.m; sourceTree = "<group>"; };
+		F7B8E143224964C00060B053 /* EkkEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EkkEntryController.h; sourceTree = "<group>"; };
+		F7B8E144224964C00060B053 /* EkkEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EkkEntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +63,33 @@
 			children = (
 				F7B8E129224963F90060B053 /* AppDelegate.h */,
 				F7B8E12A224963F90060B053 /* AppDelegate.m */,
-				F7B8E12C224963F90060B053 /* ViewController.h */,
-				F7B8E12D224963F90060B053 /* ViewController.m */,
 				F7B8E12F224963F90060B053 /* Main.storyboard */,
 				F7B8E132224963FA0060B053 /* Assets.xcassets */,
 				F7B8E134224963FA0060B053 /* LaunchScreen.storyboard */,
 				F7B8E137224963FA0060B053 /* Info.plist */,
 				F7B8E138224963FB0060B053 /* main.m */,
+				F7B8E142224964910060B053 /* Model */,
+				F7B8E146224964C60060B053 /* Model Controller */,
 			);
 			path = "Journal-C";
+			sourceTree = "<group>";
+		};
+		F7B8E142224964910060B053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7B8E13F2249648A0060B053 /* EKKEntry.h */,
+				F7B8E1402249648A0060B053 /* EKKEntry.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7B8E146224964C60060B053 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7B8E143224964C00060B053 /* EkkEntryController.h */,
+				F7B8E144224964C00060B053 /* EkkEntryController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B8E12E224963F90060B053 /* ViewController.m in Sources */,
+				F7B8E145224964C00060B053 /* EkkEntryController.m in Sources */,
 				F7B8E139224963FB0060B053 /* main.m in Sources */,
+				F7B8E1412249648A0060B053 /* EKKEntry.m in Sources */,
 				F7B8E12B224963F90060B053 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
